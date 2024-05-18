@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  streamlit_app:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      - OPENAI_API_KEY=your_openai_api_key
